@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.landing-page-circles {
+		@apply absolute w-[200px] h-[200px] rounded z-0 blur-[80px] translate-x-[-50%] translate-y-[-50%];
+	}
+
+	.landing-page-rows {
+		@apply flex items-center justify-center w-[100%] font-inter text-center;
+	}
+
+	.input {
+		@apply border-2 border-gray-300 rounded-md p-2 w-[350px] focus:outline-none focus:border-blue-500;
+	}
+
+	.inputLabel {
+		@apply text-[1vw] block text-gray-700 font-bold mb-[0.5vw];
+	}
+
+	.input-border{
+		@apply outline-none rounded-md border-2 border-[#C6C6C6] p-2 mb-4;
+	}
+	.form-temp{
+		@apply m-auto rounded w-2/4 shadow-md my-8 pb-8 bg-front;
+	}
+	.tabs {
+		@apply py-[1.5vw] px-[1.2vw] text-[1.3vw] text-textgray transition duration-300 cursor-pointer hover:text-textdark hover:bg-complementary;
+	}
+}
+@layer base{
+    html{
+        @apply bg-back;
+    }
+}
